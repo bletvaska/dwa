@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>dwa.a1.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CommandServlet</servlet-name>
+        <servlet-class>dwa.a1.CommandServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MessagesServlet</servlet-name>
+        <servlet-class>dwa.a1.MessagesServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieLoginServlet</servlet-name>
+        <servlet-class>dwa.a2.CookieLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieLogoutServlet</servlet-name>
+        <servlet-class>dwa.a2.CookieLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionLoginServlet</servlet-name>
+        <servlet-class>dwa.a2.SessionLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionLogoutServlet</servlet-name>
+        <servlet-class>dwa.a2.SessionLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UrlRewriteLogoutServlet</servlet-name>
+        <servlet-class>dwa.a2.UrlRewriteLogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UrlRewriteLoginServlet</servlet-name>
+        <servlet-class>dwa.a2.UrlRewriteLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PrivateMessagesServlet</servlet-name>
+        <servlet-class>dwa.a3.PrivateMessagesServlet</servlet-class>
+    </servlet>
+</web-app>
