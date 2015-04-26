@@ -53,7 +53,8 @@
                            autofocus/>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" rows="3" name="message" placeholder="Message" required>${message}</textarea>
+                    <textarea class="form-control" rows="3" name="text" placeholder="Message"
+                              required>${text}</textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

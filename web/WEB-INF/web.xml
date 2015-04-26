@@ -54,4 +54,9 @@
         <servlet-class>dwa.a3.PrivateMessagesServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>GetPrivateMessageServlet</servlet-name>
+        <servlet-class>dwa.a4.GetPrivateMessageServlet</servlet-class>
+    </servlet>
+
 </web-app>

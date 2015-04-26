@@ -33,4 +33,13 @@ public class PrivateMessage {
     public String getMessage() {
         return message;
     }
+
+    public String toJson() {
+        return String.format("{" +
+                "\"id\"         : %d," +
+                "\"sender\"     : \"%s\"," +
+                "\"receiver\"   : \"%s\"," +
+                "\"message\"    : \"%s\"" +
+                "}", this.id, this.sender, this.receiver, this.message);
+    }
 }

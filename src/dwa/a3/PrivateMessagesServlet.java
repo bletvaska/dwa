@@ -43,24 +43,24 @@ public class PrivateMessagesServlet extends HttpServlet {
 
             // create new message
             String receiver = request.getParameter("to");
-            String message = request.getParameter("message");
-            if(receiver != null && message != null){
+            String text = request.getParameter("text");
+            if(receiver != null && text != null){
                 // retrieve receiver id
                 rs = stmt.executeQuery(String.format(RETRIEVE_RECEIVER_QUERY, receiver));
 
                 if(rs.next()){
                     int receiver_id = rs.getInt("id");
-                    stmt.executeUpdate(String.format(CREATE_QUERY, session.getAttribute("uid"), receiver_id, message));
+                    stmt.executeUpdate(String.format(CREATE_QUERY, session.getAttribute("uid"), receiver_id, text));
                 }else{
                     request.setAttribute("alert", "No such user " + receiver);
                 }
 
                 rs.close();
-            }else{
+            }else if(receiver != null || text != null){
                 // if some of the values is missing
                 session.setAttribute("receiver", receiver);
-                session.setAttribute("message", message);
-                session.setAttribute("alert", "Receiver or message is missing");
+                session.setAttribute("text", text);
+                session.setAttribute("alert", "Receiver or text is missing");
             }
 
             // get all messages

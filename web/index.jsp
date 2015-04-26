@@ -61,6 +61,14 @@
         </li>
       </ul>
 
+      <h3>A4 Insecure Direct Object References</h3>
+
+      <ul>
+        <li>
+          <a href="/GetPrivateMessageServlet?id=1">Private Messages Getter</a>
+        </li>
+      </ul>
+
 
 
     </div>

@@ -33,7 +33,7 @@ public class SessionLoginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("login", login);
                 session.setAttribute("uid", rs.getInt("id"));
-                session.setAttribute("message", "hello world");
+                session.setAttribute("message", "hello there");
                 session.setMaxInactiveInterval(30*60);
 
                 response.sendRedirect("a2.session.main.jsp");

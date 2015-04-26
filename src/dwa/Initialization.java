@@ -41,6 +41,7 @@ public class Initialization {
             "INSERT INTO message VALUES (NULL, 1, 3, 'Of course. When and where?')",
             "INSERT INTO message VALUES (NULL, 3, 1, 'Tonight at 6pm?')",
             "INSERT INTO message VALUES (NULL, 1, 3, 'Deal')",
+            "INSERT INTO message VALUES (NULL, 99, 100, 'The pin to activate atomic bomb is 06660')",
     };
 
 
