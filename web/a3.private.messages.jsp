@@ -7,9 +7,6 @@
     if(session.getAttribute("login") == null){
         response.sendRedirect("a2.session.login.jsp");
     }
-
-    // encode logout url
-//    request.setAttribute("logoutUrl", response.encodeURL("/SessionLogoutServlet"));
 %>
 
 <t:master>
