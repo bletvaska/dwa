@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 
 
-@WebServlet(name = "CookieLoginServlet", urlPatterns = {"/CookieLoginServlet"})
+@WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends javax.servlet.http.HttpServlet {
     private static final String QUERY = "SELECT * FROM user WHERE login='%s' AND password='%s'";
 
