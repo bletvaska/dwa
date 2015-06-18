@@ -31,12 +31,13 @@ public class LoginServlet extends javax.servlet.http.HttpServlet {
             Statement stmt = con.createStatement();
             String query = String.format(QUERY, login, password);
 
+            // print the query itself
             out.println(query + "<br>");
 
             ResultSet rs = stmt.executeQuery(query);
 
             if (rs.next()) {
-                out.println("<h1>Welcome " + login + "</h1>");
+                out.println("<h1>Welcome " + rs.getString("login") + "</h1>");
                 out.println(String.format("email: %s<br/>", rs.getString("email")));
                 out.println(String.format("role: %s<br/>", rs.getString("role")));
             } else {

@@ -19,11 +19,11 @@
 
       <ul>
         <li>
-          <a href="/MessagesServlet?uid=2">Injection - Private Messages</a> (SQL Injection)
+          <a href="/a1.login.jsp">Injection - Login</a> (SQL Injection)
         </li>
 
         <li>
-          <a href="/a1.login.jsp">Injection - Login</a> (SQL Injection)
+          <a href="/MessagesServlet?uid=2">Injection - Private Messages</a> (SQL Injection)
         </li>
 
         <li>
@@ -42,13 +42,14 @@
             <a href="/a2.cookie.main.jsp">Cookie Based Homepage</a> (You have to log in)
           </li>
 
+        <li>
+          <a href="/a2.session.main.jsp">Session Based Homepage</a> (You have to log in)
+        </li>
+
           <li>
-            <a href="/a2.session.main.jsp">Session Based Homepage</a> (You have to log in)
+            <a href="/a2.url.rewrite.main.jsp">URL Rewrite Based Homepage</a> (You have to log in)
           </li>
 
-        <li>
-          <a href="/a2.url.rewrite.main.jsp">URL Rewrite Based Homepage</a> (You have to log in)
-        </li>
       </ul>
 
 

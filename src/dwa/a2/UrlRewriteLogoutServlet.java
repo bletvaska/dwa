@@ -14,14 +14,13 @@ public class UrlRewriteLogoutServlet extends HttpServlet {
         if(cookies != null){
             for(Cookie cookie : cookies){
                 if(cookie.getName().equals("JSESSIONID")){
-                    System.out.println("JSESSIONID="+cookie.getValue());
+//                    System.out.println("JSESSIONID="+cookie.getValue());
                     break;
                 }
             }
         }
         //invalidate the session if exists
         HttpSession session = request.getSession(false);
-        System.out.println("Login="+session.getAttribute("login"));
         if(session != null){
             session.invalidate();
         }

@@ -16,7 +16,7 @@ public class Initialization {
     public static final String[] QUERIES = {
             "DROP TABLE IF EXISTS user",
             "CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "login VARCHAR(32) NOT NULL, " +
+                    "login VARCHAR(32) UNIQUE NOT NULL, " +
                     "password VARCHAR(32) NOT NULL, " +
                     "email VARCHAR(64) NULL, " +
                     "role INTEGER DEFAULT 0" +

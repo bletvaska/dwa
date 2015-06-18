@@ -1,4 +1,5 @@
 <%@tag description="Overall Page template" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@attribute name="header" fragment="true" %>
 <%@attribute name="footer" fragment="true" %>
 <%@attribute name="title" fragment="true" %>
@@ -39,15 +40,19 @@
     </div>
 </nav>
 
-
-
-
 <div class="container">
     <h1>
         <jsp:invoke fragment="header"/>
     </h1>
 
     <jsp:doBody/>
+
+    <c:if test="${not empty stacktrace}">
+        <div class="alert alert-danger">
+            <b>Error:</b><br/>
+            ${stacktrace}
+        </div>
+    </c:if>
 </div>
 
 <footer class="footer">

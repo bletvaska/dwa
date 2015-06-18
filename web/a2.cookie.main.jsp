@@ -19,6 +19,10 @@
     <jsp:body>
         <h1>Welcome ${cookie.login.value}</h1>
 
+        <div class="alert alert-info">
+            Message for you: This is simply awesome. Check it out <a href="http://mirek.s.cnl.sk/hijack.php">here</a>!
+        </div>
+
         <a href="/CookieLogoutServlet" class="btn btn-primary">Logout</a>
     </jsp:body>
 </t:master>

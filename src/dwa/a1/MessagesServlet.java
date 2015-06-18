@@ -29,34 +29,40 @@ public class MessagesServlet extends HttpServlet {
         try {
             // connect and make query
             Class.forName(Configuration.DRIVER_CLASS);
-            Connection con = DriverManager.getConnection(Configuration.URL);
-            Statement stmt = con.createStatement();
             String query = String.format(QUERY, uid, uid);
-
             List<PrivateMessage> messages = new ArrayList<PrivateMessage>();
 
-            // get all messages
-            ResultSet rs = stmt.executeQuery(query);
-            while(rs.next()){
-                messages.add(new PrivateMessage (rs));
-            }
+            try {
+                Connection con = DriverManager.getConnection(Configuration.URL);
+                Statement stmt = con.createStatement();
 
-            // close
-            rs.close();
-            stmt.close();
-            con.close();
+                // get all messages
+                ResultSet rs = stmt.executeQuery(query);
+                while (rs.next()) {
+                    messages.add(new PrivateMessage(rs));
+                }
+
+                // close
+                rs.close();
+                stmt.close();
+                con.close();
+            }catch(SQLException ex){
+                // add to view
+                ex.printStackTrace();
+                request.setAttribute("stacktrace", ex.getMessage());
+            }
 
             // add to view
             request.setAttribute("messages", messages);
             request.setAttribute("query", query);
             RequestDispatcher view = request.getRequestDispatcher("a1.messages.jsp");
             view.forward(request, response);
-        } catch (SQLException ex) {
-            ex.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (ServletException e) {
             e.printStackTrace();
+        } finally{
+
         }
     }
 

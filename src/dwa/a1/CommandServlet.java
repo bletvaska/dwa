@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "CommandServlet", urlPatterns = {"/CommandServlet"})
 public class CommandServlet extends HttpServlet {
-    private static final String COMMAND = "bash -c \"ping -c 4 %s\"";
+    private static final String COMMAND = "ping -c 4 %s";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
