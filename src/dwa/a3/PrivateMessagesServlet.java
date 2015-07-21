@@ -33,9 +33,7 @@ public class PrivateMessagesServlet extends HttpServlet {
             view.forward(request, response);
         }
 
-
-
-        response.setHeader("SET-COOKIE", "JSESSIONID=" + session.getId());
+//        response.setHeader("SET-COOKIE", "JSESSIONID=" + session.getId());
 
         try {
             // connect and make query
