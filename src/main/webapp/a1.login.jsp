@@ -1,9 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <t:master>
-  <jsp:attribute name="title">DVA - Login with Sesion</jsp:attribute>
+  <jsp:attribute name="title">DVA - Signin</jsp:attribute>
 
   <jsp:attribute name="head">
     <link href="css/signin.css" rel="stylesheet">
@@ -11,12 +10,7 @@
 
 
   <jsp:body>
-    <c:if test="${not empty alert}">
-      <div class="alert alert-warning">${alert}</div>
-    </c:if>
-
-
-    <form class="form-signin" action="/CookieLoginServlet" method="get">
+    <form class="form-signin" action="LoginServlet" method="get">
       <h2 class="form-signin-heading">Please sign in</h2>
       <label for="login" class="sr-only">Login</label>
       <input type="text" name="login" id="login" class="form-control" placeholder="Login" required autofocus>

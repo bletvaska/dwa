@@ -19,19 +19,19 @@
 
       <ul>
         <li>
-          <a href="/a1.login.jsp">Injection - Login</a> (SQL Injection)
+          <a href="a1.login.jsp">Injection - Login</a> (SQL Injection)
         </li>
 
         <li>
-          <a href="/MessagesServlet?uid=2">Injection - Private Messages</a> (SQL Injection)
+          <a href="MessagesServlet?uid=2">Injection - Private Messages</a> (SQL Injection)
         </li>
 
         <li>
-          <a href="/a1.register.jsp">Injection - Register New User</a> (SQL Injection)
+          <a href="a1.register.jsp">Injection - Register New User</a> (SQL Injection)
         </li>
 
         <li>
-          <a href="/a1.command.jsp">Injection - Command</a> (Command Injection)
+          <a href="a1.command.jsp">Injection - Command</a> (Command Injection)
         </li>
       </ul>
 
@@ -39,15 +39,15 @@
 
       <ul>
           <li>
-            <a href="/a2.cookie.main.jsp">Cookie Based Homepage</a> (You have to log in)
+            <a href="a2.cookie.main.jsp">Cookie Based Homepage</a> (You have to log in)
           </li>
 
         <li>
-          <a href="/a2.session.main.jsp">Session Based Homepage</a> (You have to log in)
+          <a href="a2.session.main.jsp">Session Based Homepage</a> (You have to log in)
         </li>
 
           <li>
-            <a href="/a2.url.rewrite.main.jsp">URL Rewrite Based Homepage</a> (You have to log in)
+            <a href="a2.url.rewrite.main.jsp">URL Rewrite Based Homepage</a> (You have to log in)
           </li>
 
       </ul>
@@ -57,8 +57,8 @@
 
       <ul>
         <li>
-          <a href="/PrivateMessagesServlet">Private Messages</a> (Must be logged with <a
-                href="/a2.session.main.jsp">Session Login</a>)
+          <a href="PrivateMessagesServlet">Private Messages</a> (Must be logged with <a
+                href="a2.session.main.jsp">Session Login</a>)
         </li>
       </ul>
 
@@ -66,7 +66,7 @@
 
       <ul>
         <li>
-          <a href="/GetPrivateMessageServlet?id=1">Private Messages Getter</a>
+          <a href="GetPrivateMessageServlet?id=1">Private Messages Getter</a>
         </li>
       </ul>
 

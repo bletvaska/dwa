@@ -47,7 +47,7 @@
         </div>
 
         <div class="row">
-            <form method="get" action="/PrivateMessagesServlet">
+            <form method="get" action="PrivateMessagesServlet">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Send message to..." name="to"
                            value="${receiver}" required
