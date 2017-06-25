@@ -46,22 +46,22 @@ _DWA_ is _Maven Project_, so you can use any IDE, which is able to work with _Ma
 Manualy you can from _Maven Projects_ (`View > Tool Windows > Maven Projects`) run `Plugins > tomcat7 > tomcat7:redeploy`
 
 Or you can create configuration for deployment to running _Tomcat Server_:
-    1. `Run > Edit Configurations...`
-    2. Press `Alt + Insert` and from _Add New Configuration_ menu select _Maven_
-    3. Name your configuration _Maven Redeploy_
-    4. In field _Command Line_ type: `clean package tomcat7:redeploy`
-    5. Confirm by clicking on _Add_/_Apply_ button
+1. `Run > Edit Configurations...`
+2. Press `Alt + Insert` and from _Add New Configuration_ menu select _Maven_
+3. Name your configuration _Maven Redeploy_
+4. In field _Command Line_ type: `clean package tomcat7:redeploy`
+5. Confirm by clicking on _Add_/_Apply_ button
 
 Or you can create configuration, which runs _Tomcat_ and deploys application:
-    1. `Run > Edit Configurations...`
-    2. Press `Alt + Insert` and from _Add New Configuration_ menu select _Tomcat Server > Local_
-    3. Name your configuration as _DWA on Tomcat_
-    4. Locate your _Tomcat_ installation with button _Configure..._
-    5. In _Deployment_ tab click _+_ button and select _Artifact_
-    6. Select _dwa:war_
-    7. Back in _Server_ tab select in _On Update action_ option _Redeploy_
-    8. Select your favorite browser in _Open browser_ part
-    9. Confirm your configuration
+1. `Run > Edit Configurations...`
+2. Press `Alt + Insert` and from _Add New Configuration_ menu select _Tomcat Server > Local_
+3. Name your configuration as _DWA on Tomcat_
+4. Locate your _Tomcat_ installation with button _Configure..._
+5. In _Deployment_ tab click _+_ button and select _Artifact_
+6. Select _dwa:war_
+7. Back in _Server_ tab select in _On Update action_ option _Redeploy_
+8. Select your favorite browser in _Open browser_ part
+9. Confirm your configuration
 
 ### From CLI
 
